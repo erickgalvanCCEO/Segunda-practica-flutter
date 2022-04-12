@@ -1,3 +1,4 @@
+import 'package:componentes/screens/alert_screen.dart';
 import 'package:componentes/screens/list_view1.dart';
 import 'package:flutter/material.dart';
 
@@ -8,10 +9,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: Listview1Screen(),
+      initialRoute: 'view',
+      routes: {
+        'view': (BuildContext context) => const Listview1Screen(),
+        'alert': (BuildContext context) => const AlertScreen(),
+      },
     );
   }
 }

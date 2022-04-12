@@ -1,5 +1,5 @@
 import 'dart:math';
-
+import 'screens.dart';
 import 'package:flutter/material.dart';
 
 class Listview1Screen extends StatelessWidget {
@@ -22,7 +22,9 @@ class Listview1Screen extends StatelessWidget {
         itemBuilder: (context, index) => ListTile(
           title: Text(lista[index]),
           trailing: const Icon(Icons.arrow_back),
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, 'alert');
+          },
         ),
         separatorBuilder: (_, __) => const Divider(),
       ),
