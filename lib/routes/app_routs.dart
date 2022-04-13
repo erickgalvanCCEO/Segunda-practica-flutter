@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:componentes/screens/cards_screen.dart';
 import '../screens/screens.dart';
 
 class AppRoutes {
@@ -8,5 +8,6 @@ class AppRoutes {
   static Map<String, Widget Function(BuildContext)> routes = {
     'view': (BuildContext context) => const Listview1Screen(),
     'alert': (BuildContext context) => const AlertScreen(),
+    'cards': (BuildContext context) => const CardsScreen(),
   };
 }
