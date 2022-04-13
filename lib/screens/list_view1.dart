@@ -1,16 +1,13 @@
-import 'dart:math';
 import 'package:componentes/theme/app_theme.dart';
-
-import 'screens.dart';
 import 'package:flutter/material.dart';
 
 class Listview1Screen extends StatelessWidget {
   final lista = const ['e', 'dsa', 'jdsk', 'iwsa'];
+  final rutas = const ['cards', 'alert', 'a', 'b'];
   const Listview1Screen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    const mainColor = Color.fromARGB(255, 16, 118, 60);
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -27,7 +24,7 @@ class Listview1Screen extends StatelessWidget {
             color: AppTheme.primary,
           ),
           onTap: () {
-            Navigator.pushNamed(context, 'alert');
+            Navigator.pushNamed(context, rutas[index]);
           },
         ),
         separatorBuilder: (_, __) => const Divider(),
