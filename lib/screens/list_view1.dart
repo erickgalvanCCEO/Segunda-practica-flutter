@@ -2,8 +2,8 @@ import 'package:componentes/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class Listview1Screen extends StatelessWidget {
-  final lista = const ['e', 'dsa', 'jdsk', 'iwsa'];
-  final rutas = const ['cards', 'alert', 'a', 'b'];
+  final lista = const ['cards', 'alert', 'avatar', 'animated'];
+  final rutas = const ['cards', 'alert', 'avatar', 'animated'];
   const Listview1Screen({Key? key}) : super(key: key);
 
   @override
